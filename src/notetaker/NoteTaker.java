@@ -16,7 +16,7 @@ import javafx.stage.Stage;
  * @author JEsus
  */
 public class NoteTaker extends Application {
-    public static final String BUILD_NUMBER = "11";
+    public static final String BUILD_NUMBER = "12";
 
     /**
      * @param args the command line arguments

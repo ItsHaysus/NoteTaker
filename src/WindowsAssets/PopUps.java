@@ -7,11 +7,8 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 import notetaker.NoteTaker;
 
-/**
- * Created by Jesus on 12/15/2016.
- */
 public class PopUps {
-    Stage primaryStage;
+    private Stage primaryStage;
 
     public void versionWindow() {
         final Stage dialog = new Stage();
