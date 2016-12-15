@@ -27,9 +27,9 @@ public class Controller {
     }
 
     private void setHandlers() {
-
         design.getClose().setOnAction((event) -> System.exit(0));
         design.getSave().setOnAction((event) -> save.save());
         design.getAbout().setOnAction((event) -> assets.versionWindow());
+        design.getDelete().setOnAction((event) -> design.getEditor().setText(""));
     }
 }

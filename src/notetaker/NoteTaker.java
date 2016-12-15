@@ -16,7 +16,7 @@ import javafx.stage.Stage;
  * @author JEsus
  */
 public class NoteTaker extends Application {
-    public static final String BUILD_NUMBER = "12";
+    public static final String BUILD_NUMBER = "17";
 
     /**
      * @param args the command line arguments
@@ -31,6 +31,7 @@ public class NoteTaker extends Application {
         Controller controller = new Controller(design);
         Scene scene = new Scene(design, 400, 600);
 
+        scene.getStylesheets().add("Styles/material-fx-v0_3.css");
         primaryStage.setTitle("Note Taker");
         primaryStage.setScene(scene);
         primaryStage.show();
