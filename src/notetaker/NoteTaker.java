@@ -16,6 +16,14 @@ import javafx.stage.Stage;
  * @author JEsus
  */
 public class NoteTaker extends Application {
+    public static final String BUILD_NUMBER = "11";
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        launch(args);
+    }
 
     @Override
     public void start(Stage primaryStage) {
@@ -26,13 +34,6 @@ public class NoteTaker extends Application {
         primaryStage.setTitle("Note Taker");
         primaryStage.setScene(scene);
         primaryStage.show();
-    }
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        launch(args);
     }
 
 }

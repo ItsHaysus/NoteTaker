@@ -1,12 +1,7 @@
 package NoteTakerMVC;
 
-import java.io.File;
-import java.io.IOException;
-import java.io.PrintWriter;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
-import javafx.stage.FileChooser;
-import javafx.stage.Stage;
 
 /**
  *
@@ -16,6 +11,7 @@ public class Controller {
 
     Design design;
     SaveAs save = new SaveAs();
+    WindowsAssets.PopUps assets = new WindowsAssets.PopUps();
 
     public Controller(Design design) {
         this.design = design;
@@ -46,6 +42,9 @@ public class Controller {
         design.getSave().setOnAction((event) -> {
             save.save();
 
+        });
+        design.getAbout().setOnAction((event) -> {
+            assets.versionWindow();
         });
     }
 }
